@@ -16,6 +16,7 @@ class WeatherListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         loadWeather()
         setUpTableView()
     }

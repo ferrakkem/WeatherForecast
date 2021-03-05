@@ -22,7 +22,7 @@ class SearchCityViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.title = "Weather Forcast"
         setUpLocationManager()
         LoadingStart(messsage: "Getting location")
         searchCityListTableView.delegate = self
