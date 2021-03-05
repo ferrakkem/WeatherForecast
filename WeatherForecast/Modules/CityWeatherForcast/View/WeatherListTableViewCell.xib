@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="weatherListCell" rowHeight="121" id="KGk-i7-Jjw" customClass="WeatherListTableViewCell" customModule="WeatherForecast" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="339" height="121"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="339" height="121"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b9C-ak-coE">
+                        <rect key="frame" x="4" y="4" width="331" height="113"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="tKA-qr-XUe" userLabel="Image">
+                                <rect key="frame" x="4" y="6" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="SZb-lv-Q4e"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="spV-rW-v9v" userLabel="Temperature">
+                                <rect key="frame" x="61" y="6" width="106" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="106" id="f3j-M6-bPQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jFY-PZ-26U" userLabel="State">
+                                <rect key="frame" x="175" y="6" width="143" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="KohinoorGujarati-Bold" family="Kohinoor Gujarati" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Hu3-oM-pwT">
+                                <rect key="frame" x="106" y="61" width="49" height="47"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="ObG-7E-NIr"/>
+                                    <constraint firstAttribute="height" constant="47" id="WkJ-4n-PMG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorGujarati-Light" family="Kohinoor Gujarati" pointSize="13"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="32r-J6-yTB">
+                                <rect key="frame" x="160" y="57" width="11" height="52.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="11" id="jvZ-1r-tG1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorGujarati-Bold" family="Kohinoor Gujarati" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Lye-Zc-jwH" userLabel="Min Temp">
+                                <rect key="frame" x="176" y="57" width="45" height="51"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="k4q-Ig-FjD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KohinoorGujarati-Light" family="Kohinoor Gujarati" pointSize="13"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="spV-rW-v9v" firstAttribute="bottom" secondItem="jFY-PZ-26U" secondAttribute="bottom" id="8Fy-SM-uQN"/>
+                            <constraint firstItem="Hu3-oM-pwT" firstAttribute="baseline" secondItem="32r-J6-yTB" secondAttribute="baseline" id="AvV-P5-rfp"/>
+                            <constraint firstItem="spV-rW-v9v" firstAttribute="top" secondItem="jFY-PZ-26U" secondAttribute="top" id="Br3-Sl-eOp"/>
+                            <constraint firstItem="tKA-qr-XUe" firstAttribute="top" secondItem="b9C-ak-coE" secondAttribute="top" constant="6" id="CsS-TM-d27"/>
+                            <constraint firstItem="Lye-Zc-jwH" firstAttribute="top" secondItem="32r-J6-yTB" secondAttribute="top" id="DJ6-ZW-wIE"/>
+                            <constraint firstAttribute="bottom" secondItem="tKA-qr-XUe" secondAttribute="bottom" constant="62" id="GPW-NB-yF5"/>
+                            <constraint firstItem="jFY-PZ-26U" firstAttribute="leading" secondItem="spV-rW-v9v" secondAttribute="trailing" constant="8" id="GcB-w4-MIt"/>
+                            <constraint firstAttribute="bottom" secondItem="Hu3-oM-pwT" secondAttribute="bottom" constant="5" id="HL0-2F-Cu1"/>
+                            <constraint firstItem="tKA-qr-XUe" firstAttribute="leading" secondItem="b9C-ak-coE" secondAttribute="leading" constant="4" id="S7r-Ll-U6n"/>
+                            <constraint firstItem="tKA-qr-XUe" firstAttribute="top" secondItem="spV-rW-v9v" secondAttribute="top" id="Ufv-ne-jDF"/>
+                            <constraint firstAttribute="trailing" secondItem="jFY-PZ-26U" secondAttribute="trailing" constant="13" id="VWY-sZ-M67"/>
+                            <constraint firstItem="Lye-Zc-jwH" firstAttribute="top" secondItem="jFY-PZ-26U" secondAttribute="bottom" constant="1" id="aAD-HE-TIy"/>
+                            <constraint firstItem="Lye-Zc-jwH" firstAttribute="leading" secondItem="32r-J6-yTB" secondAttribute="trailing" constant="5" id="bIm-Bq-NcK"/>
+                            <constraint firstItem="spV-rW-v9v" firstAttribute="leading" secondItem="tKA-qr-XUe" secondAttribute="trailing" constant="12" id="log-az-cR0"/>
+                            <constraint firstItem="Lye-Zc-jwH" firstAttribute="baseline" secondItem="32r-J6-yTB" secondAttribute="baseline" id="mev-MR-Bir"/>
+                            <constraint firstItem="32r-J6-yTB" firstAttribute="centerX" secondItem="b9C-ak-coE" secondAttribute="centerX" id="nQL-do-BcC"/>
+                            <constraint firstItem="Hu3-oM-pwT" firstAttribute="firstBaseline" secondItem="32r-J6-yTB" secondAttribute="firstBaseline" id="sdJ-8E-bSB"/>
+                            <constraint firstItem="32r-J6-yTB" firstAttribute="leading" secondItem="Hu3-oM-pwT" secondAttribute="trailing" constant="5" id="ufc-ls-3qC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="b9C-ak-coE" secondAttribute="bottom" constant="4" id="6Ne-kv-o4X"/>
+                    <constraint firstAttribute="trailing" secondItem="b9C-ak-coE" secondAttribute="trailing" constant="4" id="Z3s-v6-2J6"/>
+                    <constraint firstItem="b9C-ak-coE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="dLZ-z2-CNW"/>
+                    <constraint firstItem="b9C-ak-coE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="fsw-EE-ulq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cardView" destination="b9C-ak-coE" id="QND-cb-bse"/>
+                <outlet property="imageViewIcon" destination="tKA-qr-XUe" id="PBu-M8-t08"/>
+                <outlet property="maxTemp" destination="Hu3-oM-pwT" id="uK1-0x-rMd"/>
+                <outlet property="minTemp" destination="Lye-Zc-jwH" id="b02-3N-Ilm"/>
+                <outlet property="temperatureLabel" destination="spV-rW-v9v" id="toN-mV-mRU"/>
+                <outlet property="weatherState" destination="jFY-PZ-26U" id="b7e-X6-Iga"/>
+            </connections>
+            <point key="canvasLocation" x="148.55072463768118" y="128.23660714285714"/>
+        </tableViewCell>
+    </objects>
+</document>
