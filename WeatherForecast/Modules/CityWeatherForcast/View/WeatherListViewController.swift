@@ -28,6 +28,7 @@ class WeatherListViewController: UIViewController {
     }
     
     func loadWeather(){
+        LoadingStop()
         weatherViewModel.getCityData(woid: cityId) {
             DispatchQueue.main.async {
                 self.weatherListTableView.reloadData()

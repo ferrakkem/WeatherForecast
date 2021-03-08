@@ -139,8 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				F360714425F2326500BED5F1 /* Mocks */,
-				F36070F925F2234C00BED5F1 /* Info.plist */,
 				F360713B25F231CA00BED5F1 /* WeatherListViewModeltest.swift */,
+				F36070F925F2234C00BED5F1 /* Info.plist */,
 			);
 			path = WeatherForecastUITests;
 			sourceTree = "<group>";
